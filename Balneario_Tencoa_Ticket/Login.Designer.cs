@@ -38,10 +38,11 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblUsuario.Location = new System.Drawing.Point(9, 73);
+            this.lblUsuario.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Location = new System.Drawing.Point(179, 44);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(51, 20);
+            this.lblUsuario.Size = new System.Drawing.Size(83, 31);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuario";
             this.lblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -50,16 +51,16 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(106, 73);
+            this.txtUsuario.Location = new System.Drawing.Point(268, 44);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(212, 22);
+            this.txtUsuario.Size = new System.Drawing.Size(158, 22);
             this.txtUsuario.TabIndex = 1;
             // 
             // txtPsw
             // 
-            this.txtPsw.Location = new System.Drawing.Point(106, 122);
+            this.txtPsw.Location = new System.Drawing.Point(268, 112);
             this.txtPsw.Name = "txtPsw";
-            this.txtPsw.Size = new System.Drawing.Size(212, 22);
+            this.txtPsw.Size = new System.Drawing.Size(158, 22);
             this.txtPsw.TabIndex = 3;
             this.txtPsw.UseSystemPasswordChar = true;
             this.txtPsw.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -67,10 +68,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(9, 122);
+            this.label2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(143, 112);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 20);
+            this.label2.Size = new System.Drawing.Size(119, 31);
             this.label2.TabIndex = 2;
             this.label2.Text = "Contraseña";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -79,7 +81,7 @@
             // 
             // btnIngresar
             // 
-            this.btnIngresar.Location = new System.Drawing.Point(235, 170);
+            this.btnIngresar.Location = new System.Drawing.Point(306, 214);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(83, 40);
             this.btnIngresar.TabIndex = 4;
@@ -91,13 +93,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(352, 259);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(466, 337);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.txtPsw);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblUsuario);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
