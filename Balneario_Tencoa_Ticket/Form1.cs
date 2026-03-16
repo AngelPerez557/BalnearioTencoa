@@ -20,6 +20,9 @@ namespace Balneario_Tencoa_Ticket
                 MessageBox.Show("Modo empleado");
 
                 // ocultar funciones de administrador
+                btnAdmistrarUsuarios.Visible = false;
+                btnCambiarPrecios.Visible = false;
+                btnVerReportes.Visible = false;
 
             }
             else
@@ -102,6 +105,25 @@ namespace Balneario_Tencoa_Ticket
                     cmdAdmin.ExecuteNonQuery();
                 }
             }
+        }
+
+        private void btnVender_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            MessageBox.Show("Sesion Cerrada Exitosamente");
+            this.Close();
+        }
+
+        private void btnAdmistrarUsuarios_Click(object sender, EventArgs e)
+        {
+            Usuarios formUsuarios = new Usuarios();
+            formUsuarios.ShowDialog();
         }
     }
 }
