@@ -59,7 +59,7 @@ namespace Balneario_Tencoa_Ticket
                 {
                     bool esAdmin = Convert.ToInt32(resultado) == 1;
 
-                    Form1 sistema = new Form1(esAdmin);
+                    Principal sistema = new Principal(esAdmin, usuario);
                     sistema.Show();
 
                     this.Hide();

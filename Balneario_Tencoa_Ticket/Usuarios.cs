@@ -136,7 +136,7 @@ namespace Balneario_Tencoa_Ticket
             {
                 conn.Open();
 
-                string query = "DELETE FROM usuarios WHERE id=@id";
+                string query = "DELETE FROM usuarios WHERE id=@id AND es_admin= 0";
 
                 SQLiteCommand cmd = new SQLiteCommand(query, conn);
                 cmd.Parameters.AddWithValue("@id", idSeleccionado);
