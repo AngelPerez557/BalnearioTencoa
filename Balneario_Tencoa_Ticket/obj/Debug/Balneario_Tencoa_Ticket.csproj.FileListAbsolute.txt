@@ -23,3 +23,6 @@ C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticke
 C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Debug\Balneario_Tencoa_Ticket.Properties.Resources.resources
 C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Debug\Balneario_Tencoa_Ticket.csproj.GenerateResource.Cache
 C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Debug\Balneario_Tencoa_Ticket.Usuarios.resources
+C:\Users\jhsir\OneDrive\Documentos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\bin\Debug\Balneario_Tencoa_Ticket.exe.config
+C:\Users\jhsir\OneDrive\Documentos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Debug\Balneario_Tencoa_Ticket.exe
+C:\Users\jhsir\OneDrive\Documentos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Debug\Balneario_Tencoa_Ticket.pdb
