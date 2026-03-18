@@ -145,12 +145,23 @@ namespace Balneario_Tencoa_Ticket
 
                 Font titulo = new Font("Consolas", 14, FontStyle.Bold);
                 Font texto = new Font("Consolas", 10);
+                Font small = new Font("Consolas", 9);
 
+                int ancho = 280; // ancho del ticket
                 int y = 10;
-               
-                g.DrawString("BALNEARIO TENCOA", titulo, Brushes.Black, 10, y);
-                y += 40;
 
+                // FUNCION PARA CENTRAR TEXTO
+                StringFormat center = new StringFormat();
+                center.Alignment = StringAlignment.Center;
+
+                // TITULO
+                g.DrawString("BALNEARIO TENCOA", titulo, Brushes.Black, new RectangleF(0, y, ancho, 30), center);
+                y += 30;
+
+                g.DrawString("El Emblematico", small, Brushes.Black, new RectangleF(0, y, ancho, 20), center);
+                y += 30;
+
+                // FECHA Y HORA
                 g.DrawString("Fecha: " + DateTime.Now.ToString("dd/MM/yyyy"), texto, Brushes.Black, 10, y);
                 y += 20;
 
@@ -158,27 +169,41 @@ namespace Balneario_Tencoa_Ticket
                 y += 20;
 
                 g.DrawString("Cajero: " + UsuarioActual, texto, Brushes.Black, 10, y);
-                y += 30;
+                y += 25;
 
-                g.DrawString("Adultos: " + AdultosTicket +" X " + precioAdulto , texto, Brushes.Black, 10, y);
+                g.DrawString("--------------------------------", texto, Brushes.Black, 10, y);
                 y += 20;
 
-                g.DrawString("Niños  : " + ninosTicket + " X "+ precioNino, texto, Brushes.Black, 10, y);
+                // DETALLE (ALINEADO)
+                g.DrawString("Adultos", texto, Brushes.Black, 10, y);
+                g.DrawString(AdultosTicket + " x " + precioAdulto, texto, Brushes.Black, 150, y);
                 y += 20;
 
-                g.DrawString("----------------------------", texto, Brushes.Black, 10, y);
+                g.DrawString("Niños", texto, Brushes.Black, 10, y);
+                g.DrawString(ninosTicket + " x " + precioNino, texto, Brushes.Black, 150, y);
+                y += 20;
+
+                g.DrawString("--------------------------------", texto, Brushes.Black, 10, y);
                 y += 20;
 
                 g.DrawString("Total Personas: " + (AdultosTicket + ninosTicket), texto, Brushes.Black, 10, y);
-                y += 30;
+                y += 25;
 
-                g.DrawString("TOTAL: L " + totalTicket.ToString("N2"), titulo, Brushes.Black, 10, y);
+                // TOTAL GRANDE CENTRADO
+                g.DrawString("TOTAL: L " + totalTicket.ToString("N2"), titulo, Brushes.Black, new RectangleF(0, y, ancho, 30), center);
                 y += 40;
 
-                g.DrawString("¡Gracias por visitarnos!", texto, Brushes.Black, 10, y);
+                g.DrawString("--------------------------------", texto, Brushes.Black, 10, y);
                 y += 20;
 
-                g.DrawString("Disfrute su estadía", texto, Brushes.Black, 10, y);
+                // MENSAJE FINAL
+                g.DrawString("¡Gracias por su visita!", texto, Brushes.Black, new RectangleF(0, y, ancho, 20), center);
+                y += 20;
+
+                g.DrawString("CEL: 9563-7841", texto, Brushes.Black, new RectangleF(0, y, ancho, 20), center);
+                y += 20;
+
+                g.DrawString("ESTA NO ES UNA FACTURA", titulo, Brushes.Black, new RectangleF(0, y, ancho, 20), center);
             };
 
             pd.Print();

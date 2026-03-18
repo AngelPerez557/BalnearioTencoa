@@ -162,6 +162,7 @@ namespace Balneario_Tencoa_Ticket
             this.Controls.Add(this.pnlContenido);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Principal";
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Form1_Load);

@@ -1,0 +1,16 @@
+C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\bin\Release\Balneario_Tencoa_Ticket.exe.config
+C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\bin\Release\Balneario_Tencoa_Ticket.exe
+C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\bin\Release\Balneario_Tencoa_Ticket.pdb
+C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\bin\Release\System.Data.SQLite.dll
+C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\bin\Release\System.Data.SQLite.xml
+C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Release\Balneario_Tencoa_Ticket.csprojResolveAssemblyReference.cache
+C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Release\Balneario_Tencoa_Ticket.Entradas.resources
+C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Release\Balneario_Tencoa_Ticket.Precios.resources
+C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Release\Balneario_Tencoa_Ticket.Principal.resources
+C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Release\Balneario_Tencoa_Ticket.Login.resources
+C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Release\Balneario_Tencoa_Ticket.Properties.Resources.resources
+C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Release\Balneario_Tencoa_Ticket.Reportes.resources
+C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Release\Balneario_Tencoa_Ticket.Usuarios.resources
+C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Release\Balneario_Tencoa_Ticket.csproj.GenerateResource.Cache
+C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Release\Balneario_Tencoa_Ticket.exe
+C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Release\Balneario_Tencoa_Ticket.pdb
