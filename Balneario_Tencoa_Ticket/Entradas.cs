@@ -8,12 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using System.Drawing.Printing;
 
 namespace Balneario_Tencoa_Ticket
 {
     public partial class Entradas : Form
     {
         string UsuarioActual;
+
+        int AdultosTicket;
+        int ninosTicket;
+        double totalTicket;
+        
         public Entradas(string usuario)
         {
             InitializeComponent();
@@ -80,6 +86,10 @@ namespace Balneario_Tencoa_Ticket
             
 
             double total = (adultos * precioAdulto) + (ninos * precioNino);
+            AdultosTicket = adultos;
+            ninosTicket = ninos;
+            totalTicket = total;
+
 
             string conexion = "Data Source=Tencoa.db;Version=3;";
 
@@ -117,9 +127,61 @@ namespace Balneario_Tencoa_Ticket
             }
 
             MessageBox.Show("Venta registrada");
+            ImprimirTicket();
 
             numAdultos.Value = 0;
             numNinos.Value = 0;
+        }
+
+        private void ImprimirTicket()
+        {
+            PrintDocument pd = new PrintDocument();
+            double precioAdulto = ObtenerPrecio("adulto");
+            double precioNino = ObtenerPrecio("nino");
+
+            pd.PrintPage += (sender, e) =>
+            {
+                Graphics g = e.Graphics;
+
+                Font titulo = new Font("Consolas", 14, FontStyle.Bold);
+                Font texto = new Font("Consolas", 10);
+
+                int y = 10;
+               
+                g.DrawString("BALNEARIO TENCOA", titulo, Brushes.Black, 10, y);
+                y += 40;
+
+                g.DrawString("Fecha: " + DateTime.Now.ToString("dd/MM/yyyy"), texto, Brushes.Black, 10, y);
+                y += 20;
+
+                g.DrawString("Hora : " + DateTime.Now.ToString("HH:mm"), texto, Brushes.Black, 10, y);
+                y += 20;
+
+                g.DrawString("Cajero: " + UsuarioActual, texto, Brushes.Black, 10, y);
+                y += 30;
+
+                g.DrawString("Adultos: " + AdultosTicket +" X " + precioAdulto , texto, Brushes.Black, 10, y);
+                y += 20;
+
+                g.DrawString("Niños  : " + ninosTicket + " X "+ precioNino, texto, Brushes.Black, 10, y);
+                y += 20;
+
+                g.DrawString("----------------------------", texto, Brushes.Black, 10, y);
+                y += 20;
+
+                g.DrawString("Total Personas: " + (AdultosTicket + ninosTicket), texto, Brushes.Black, 10, y);
+                y += 30;
+
+                g.DrawString("TOTAL: L " + totalTicket.ToString("N2"), titulo, Brushes.Black, 10, y);
+                y += 40;
+
+                g.DrawString("¡Gracias por visitarnos!", texto, Brushes.Black, 10, y);
+                y += 20;
+
+                g.DrawString("Disfrute su estadía", texto, Brushes.Black, 10, y);
+            };
+
+            pd.Print();
         }
     }
 }
