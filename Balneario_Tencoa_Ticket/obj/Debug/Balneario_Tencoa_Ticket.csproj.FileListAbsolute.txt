@@ -29,3 +29,16 @@ C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticke
 C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Debug\Balneario_Tencoa_Ticket.Entradas.resources
 C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Debug\Balneario_Tencoa_Ticket.Precios.resources
 C:\Users\angel\Documents\Proyectos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Debug\Balneario_Tencoa_Ticket.Reportes.resources
+C:\Users\jhsir\OneDrive\Documentos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\bin\Debug\Balneario_Tencoa_Ticket.exe
+C:\Users\jhsir\OneDrive\Documentos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\bin\Debug\Balneario_Tencoa_Ticket.pdb
+C:\Users\jhsir\OneDrive\Documentos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\bin\Debug\System.Data.SQLite.dll
+C:\Users\jhsir\OneDrive\Documentos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\bin\Debug\System.Data.SQLite.xml
+C:\Users\jhsir\OneDrive\Documentos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Debug\Balneario_Tencoa_Ticket.csprojResolveAssemblyReference.cache
+C:\Users\jhsir\OneDrive\Documentos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Debug\Balneario_Tencoa_Ticket.Entradas.resources
+C:\Users\jhsir\OneDrive\Documentos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Debug\Balneario_Tencoa_Ticket.Precios.resources
+C:\Users\jhsir\OneDrive\Documentos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Debug\Balneario_Tencoa_Ticket.Principal.resources
+C:\Users\jhsir\OneDrive\Documentos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Debug\Balneario_Tencoa_Ticket.Login.resources
+C:\Users\jhsir\OneDrive\Documentos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Debug\Balneario_Tencoa_Ticket.Properties.Resources.resources
+C:\Users\jhsir\OneDrive\Documentos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Debug\Balneario_Tencoa_Ticket.Reportes.resources
+C:\Users\jhsir\OneDrive\Documentos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Debug\Balneario_Tencoa_Ticket.Usuarios.resources
+C:\Users\jhsir\OneDrive\Documentos\Tencoa\BalnearioTencoa\Balneario_Tencoa_Ticket\obj\Debug\Balneario_Tencoa_Ticket.csproj.GenerateResource.Cache

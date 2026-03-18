@@ -75,7 +75,7 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(253, 155);
+            this.lblTotal.Location = new System.Drawing.Point(173, 146);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(68, 17);
             this.lblTotal.TabIndex = 4;
@@ -83,19 +83,24 @@
             // 
             // btnCobrar
             // 
-            this.btnCobrar.Location = new System.Drawing.Point(37, 145);
+            this.btnCobrar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnCobrar.FlatAppearance.BorderSize = 0;
+            this.btnCobrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCobrar.Font = new System.Drawing.Font("Malgun Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnCobrar.ForeColor = System.Drawing.Color.White;
+            this.btnCobrar.Location = new System.Drawing.Point(37, 127);
             this.btnCobrar.Name = "btnCobrar";
-            this.btnCobrar.Size = new System.Drawing.Size(93, 36);
+            this.btnCobrar.Size = new System.Drawing.Size(110, 42);
             this.btnCobrar.TabIndex = 5;
             this.btnCobrar.Text = "Cobrar";
-            this.btnCobrar.UseVisualStyleBackColor = true;
+            this.btnCobrar.UseVisualStyleBackColor = false;
             this.btnCobrar.Click += new System.EventHandler(this.btnCobrar_Click);
             // 
             // Entradas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 315);
+            this.ClientSize = new System.Drawing.Size(334, 207);
             this.Controls.Add(this.btnCobrar);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.label2);

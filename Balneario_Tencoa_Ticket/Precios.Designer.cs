@@ -47,26 +47,31 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(149, 165);
+            this.btnGuardar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Malgun Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.Location = new System.Drawing.Point(92, 125);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(183, 75);
+            this.btnGuardar.Size = new System.Drawing.Size(152, 36);
             this.btnGuardar.TabIndex = 1;
             this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // txtAdulto
             // 
-            this.txtAdulto.Location = new System.Drawing.Point(29, 90);
+            this.txtAdulto.Location = new System.Drawing.Point(29, 69);
             this.txtAdulto.Name = "txtAdulto";
-            this.txtAdulto.Size = new System.Drawing.Size(100, 22);
+            this.txtAdulto.Size = new System.Drawing.Size(121, 22);
             this.txtAdulto.TabIndex = 2;
             this.txtAdulto.TextChanged += new System.EventHandler(this.txtAdulto_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(240, 35);
+            this.label2.Location = new System.Drawing.Point(193, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 17);
             this.label2.TabIndex = 3;
@@ -74,16 +79,16 @@
             // 
             // txtNino
             // 
-            this.txtNino.Location = new System.Drawing.Point(232, 90);
+            this.txtNino.Location = new System.Drawing.Point(184, 69);
             this.txtNino.Name = "txtNino";
-            this.txtNino.Size = new System.Drawing.Size(100, 22);
+            this.txtNino.Size = new System.Drawing.Size(121, 22);
             this.txtNino.TabIndex = 4;
             // 
             // Precios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(503, 296);
+            this.ClientSize = new System.Drawing.Size(358, 205);
             this.Controls.Add(this.txtNino);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtAdulto);
