@@ -18,6 +18,35 @@ namespace Balneario_Tencoa_Ticket
             InitializeComponent();
         }
 
+        // --- MÉTODO DE DISEÑO AGREGADO ---
+        private void EstilizarDataGridView()
+        {
+            dgvUsuarios.BackgroundColor = Color.White;
+            dgvUsuarios.BorderStyle = BorderStyle.None;
+            dgvUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvUsuarios.AllowUserToResizeRows = false;
+            dgvUsuarios.RowHeadersVisible = false;
+
+            // Encabezados
+            dgvUsuarios.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgvUsuarios.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(45, 66, 91);
+            dgvUsuarios.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvUsuarios.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            dgvUsuarios.ColumnHeadersHeight = 35;
+            dgvUsuarios.EnableHeadersVisualStyles = false;
+
+            // Celdas
+            dgvUsuarios.DefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 120, 215);
+            dgvUsuarios.DefaultCellStyle.SelectionForeColor = Color.White;
+            dgvUsuarios.DefaultCellStyle.Font = new Font("Segoe UI", 9);
+
+            // Efecto Cebra
+            dgvUsuarios.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(235, 245, 255);
+
+            // Ajuste de columnas
+            dgvUsuarios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        }
+
         private void CargarUsuarios()
         {
             string conexion = "Data Source=Tencoa.db;Version=3;";
@@ -34,11 +63,20 @@ namespace Balneario_Tencoa_Ticket
                 da.Fill(dt);
 
                 dgvUsuarios.DataSource = dt;
+
+                // Aplicar nombres legibles a las columnas después de cargar datos
+                if (dgvUsuarios.Columns.Count > 0)
+                {
+                    dgvUsuarios.Columns["id"].HeaderText = "ID";
+                    dgvUsuarios.Columns["username"].HeaderText = "Usuario";
+                    dgvUsuarios.Columns["es_admin"].HeaderText = "Administrador";
+                }
             }
         }
 
         private void Usuarios_Load(object sender, EventArgs e)
         {
+            EstilizarDataGridView(); // Llamada al diseño
             CargarUsuarios();
         }
 
